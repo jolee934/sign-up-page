@@ -1,6 +1,32 @@
 
+
+@font-face {
+    font-family: norse;
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+
 body {
     display: flex
+}
+
+.logo {
+    max-width:45vw
+}
+
+.odin_logo {
+    max-width: 130px;
+    position: relative;
+    top: 30px
+}
+
+.odin{
+    position: absolute;
+    top: 230px;
+    left: 150px;
+    color:white;
+    font-family: norse;
+    font-size:125px;
+    background: red;;
 }
 
 h2 {
