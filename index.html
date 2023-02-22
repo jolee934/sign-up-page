@@ -75,5 +75,14 @@
       </h3>
     </div>
   </body>
-  <script src="javascript.js"></script>
+  <script>
+    const password = document.querySelector("#password");
+    const passwordConfirm = document.querySelector("#password_confirm");
+    const submitButton = document.querySelector(".b1");
+
+    submitButton.addEventListener("click", () => {
+      console.log("True");
+      console.log(password);
+    });
+  </script>
 </html>

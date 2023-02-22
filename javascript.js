@@ -1,5 +1,5 @@
 
-  const p = document.querySelector("#b1");
+  const p = document.querySelector(".password");
 
   p.addEventListener("click", function (e) {
     console.log(e);
