@@ -10,64 +10,69 @@
   <body>
     <h1>
       <img class="logo" src="img/bg.avif" alt="logo photo" />
-
-      <div class="odin">
-        <img class="odin_logo" src="img/odin.png" alt="odin logo photo" />
-        ODIN
+      <div class="h1container">
+        <div class="odin">
+          <img class="odin_logo" src="img/odin.png" alt="odin logo photo" />
+          ODIN
+        </div>
       </div>
     </h1>
     <div class="right">
       <h2>
         <div class="para">
-          This is not a real service! Just a heading. YOu need something like
-          this in your life to help you realize your deepest dreams. Sign up now
+          This is not a real service! Just a heading. You need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em>
           to get started
         </div>
-        <div class="para_two">You know you want to</div>
+        <div class="para_two">You <em>know</em> you want to</div>
       </h2>
       <h3>
         <form class="sign_up" action="#" method="post">
           <legend>Let's do this!</legend>
+          <div class="formtop">
+            <fieldset>
+              <div class="form-cell">
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" id="first_name" />
+              </div>
+              <div class="form-cell">
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name" />
+              </div>
+            </fieldset>
 
-          <fieldset>
-            <div class="form-cell">
-              <label for="first_name">FIRST NAME</label>
-              <input type="text" id="first_name" />
-            </div>
-            <div class="form-cell">
-              <label for="last_name">LAST NAME</label>
-              <input type="text" id="last_name" />
-            </div>
-          </fieldset>
+            <fieldset>
+              <div class="form-cell">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" />
+              </div>
 
-          <fieldset>
-            <div class="form-cell">
-              <label for="email">EMAIL</label>
-              <input type="email" id="email" />
-            </div>
+              <div class="form-cell">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="text" id="phone" />
+              </div>
+            </fieldset>
 
-            <div class="form-cell">
-              <label for="phone">PHONE NUMBER</label>
-              <input type="text" id="phone" />
+            <fieldset>
+              <div class="form-cell">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" />
+              </div>
+              <div class="form-cell">
+                <label for="password_confirm">CONFIRM PASSWORD</label>
+                <input type="password" id="password_confirm" />
+              </div>
+            </fieldset>
+          </div>
+          <div class="formbot">
+            <button class="b1" type="submit">Create Account</button>
+            <div class="login">
+              Already have an account? <a href="google.com">Log in</a>
             </div>
-          </fieldset>
-
-          <fieldset>
-            <div class="form-cell">
-              <label for="password">PASSWORD</label>
-              <input type="password" id="password" />
-            </div>
-            <div class="form-cell">
-              <label for="password_confirm">CONFIRM PASSWORD</label>
-              <input type="password" id="password_confirm" />
-            </div>
-          </fieldset>
+          </div>
         </form>
       </h3>
-      <h4>
-        <button type="submit">Create Account</button>
-        <div>Already have an account? Log in</div>
-      </h4>
     </div>
   </body>
 </html>
