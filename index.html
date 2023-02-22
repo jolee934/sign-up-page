@@ -66,7 +66,9 @@
             </fieldset>
           </div>
           <div class="formbot">
-            <button class="b1" type="submit">Create Account</button>
+            <button class="b1" onclick="checkPass()" type="submit">
+              Create Account
+            </button>
             <div class="login">
               Already have an account? <a href="google.com">Log in</a>
             </div>
@@ -76,13 +78,14 @@
     </div>
   </body>
   <script>
-    const password = document.querySelector("#password");
-    const passwordConfirm = document.querySelector("#password_confirm");
-    const submitButton = document.querySelector(".b1");
-
-    submitButton.addEventListener("click", () => {
-      console.log("True");
-      console.log(password);
-    });
+    let password = document.querySelector("#password");
+    let passwordConfirm = document.querySelector("#password_confirm");
+    let b1 = document.querySelector(".b1");
+    function checkPass() {
+      console.log("test");
+      if (password === passwordConfirm) {
+        console.log("true");
+      }
+    }
   </script>
 </html>
