@@ -5,6 +5,7 @@
     src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
 }
 
+
 body {
     display: flex;    
 }
@@ -12,18 +13,36 @@ body {
 .left {
     flex:1;
     border: 2px solid red;
-    background: url(img/bg.avif);
-    min-width: 500px;
+    background: url(img/bg.avif); 
+    background-repeat: no-repeat;
+    max-width: 600px;
+    min-height: 100%;
 }
 
+.odin{
+    color: white;
+    font-family: norse;
+    font-size: 120px;
+    background-color: rgba(17, 16, 16, 0.534);
+    text-align: center; 
+    position: relative;
+    top: 150px
+}
 
-
+.odin_logo {
+    max-width: 100px;
+    position: relative;
+    top: 25px;
+    border: 2px solid green;
+}
 
 .logo{
     min-height: 100%;
 }
 
 .right {
+    
+    flex: 1;
     border: 2px solid blue;
 }
 
@@ -31,21 +50,10 @@ body {
     max-width:45vw
 }
 
-.odin_logo {
-    max-width: 130px;
-    position: relative;
-    top: 30px;
-    border: 2px solid green;
-}
-
-
-.h1container {
-    
-}
-
-h2 {
-   
+h2 {  
     background-color: rgb(235, 235, 235);
+    padding-bottom: 50px;
+    border: 2px solid yellow;
 }
 
 .para{
@@ -60,7 +68,7 @@ h2 {
 
 
 h3 {
-    flex: 1;
+    flex: 1;    
     border: 2px solid red;
     height: 250px
 }
