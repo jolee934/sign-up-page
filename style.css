@@ -6,7 +6,25 @@
 }
 
 body {
-    display: flex
+    display: flex;    
+}
+
+.left {
+    flex:1;
+    border: 2px solid red;
+    background: url(img/bg.avif);
+    min-width: 500px;
+}
+
+
+
+
+.logo{
+    min-height: 100%;
+}
+
+.right {
+    border: 2px solid blue;
 }
 
 .logo {
@@ -22,21 +40,11 @@ body {
 
 
 .h1container {
-    border: 2px solid red;
-}
-
-.odin{
-    position: absolute;
-    top: 230px;
-    left: 150px;
-    color:white;
-    font-family: norse;
-    font-size:125px;    
-    display: block;
+    
 }
 
 h2 {
-    flex: 1;
+   
     background-color: rgb(235, 235, 235);
 }
 
