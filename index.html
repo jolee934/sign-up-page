@@ -33,23 +33,28 @@
             <fieldset>
               <div class="form-cell">
                 <label for="first_name">FIRST NAME</label>
-                <input type="text" id="first_name" />
+                <input type="text" id="first_name" name="first_name" />
               </div>
               <div class="form-cell">
                 <label for="last_name">LAST NAME</label>
-                <input type="text" id="last_name" />
+                <input type="text" id="last_name" name="last_name" />
               </div>
             </fieldset>
 
             <fieldset>
               <div class="form-cell">
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" />
+                <input type="email" id="email" name="email" />
               </div>
 
               <div class="form-cell">
                 <label for="phone">PHONE NUMBER</label>
-                <input type="text" id="phone" />
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  pattern="(\d{7}([\-]\d{4})?)"
+                />
               </div>
             </fieldset>
 
