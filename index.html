@@ -27,7 +27,7 @@
         <div class="para_two">You <em>know</em> you want to</div>
       </h2>
       <h3>
-        <form class="sign_up" action="#" method="post">
+        <form class="sign_up">
           <legend>Let's do this!</legend>
           <div class="formtop">
             <fieldset>
@@ -76,13 +76,20 @@
       </h3>
     </div>
   </body>
+
   <script>
     let password = document.querySelector("#password");
     let passwordConfirm = document.querySelector("#password_confirm");
     let b1 = document.querySelector(".b1");
+
+    b1.addEventListener("mouseclick", function (e) {
+      console.log(password.value);
+      checkPass();
+    });
+
     function checkPass() {
-      console.log("test");
-      if (password === passwordConfirm) {
+      password.classList.toggle("invalid");
+      if (password.value === passwordConfirm.value) {
         console.log("true");
       }
     }

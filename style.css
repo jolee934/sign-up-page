@@ -102,9 +102,12 @@ input:valid {
     border: 2px solid #E5E7EB;
 }
 
-input:invalid {
+input.invalid {
     border: 2px solid red;
 }
+
+
+
 
 
 legend{
